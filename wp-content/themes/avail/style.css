@@ -1,0 +1,84 @@
+/*
+Theme Name: Avail
+Theme URI: https://www.nayrathemes.com/avail-free/
+Author: Nayra Themes
+Author URI: https://www.nayrathemes.com/
+Description: Avail is flexible, super fast, easily customizable, lightweight, modern multipurpose theme. Avail comes with everything you could ever need to build an amazing website, and It's perfect for any type of business. View the demo of Avail Pro https://www.nayrathemes.com/demo/pro/?theme=avail
+Template: avril
+Version: 1.0.12
+Tested up to: 5.7.1
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: avail
+Slug: avail
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu,  custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, photography, portfolio, editor-style, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* ========= Avail Slider ========= */
+
+.avail-theme .theme-slider div.theme-content {
+	max-width: 100%;
+}
+
+.avail-theme .theme-slider .text-right [class*="av-column-"]:first-child {
+    order: 1;
+}
+
+.avail-theme .theme-slider .text-center [class*="av-column-"]:first-child {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.avail-theme .theme-slider .text-center [class*="av-column-"]:nth-child(2) img {
+    margin: auto;
+}
+
+.avail-theme .theme-slider .text-center [class*="av-column-"]:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.avail-theme .owl-item .aera-img img {
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width:767px) {
+    .main-slider .owl-item .item {  }
+}
+
+@media only screen and (max-width:991px) {
+    .avail-theme .theme-slider div.theme-content {
+        margin-bottom: 15px;
+    }
+    .avail-theme .theme-slider .text-right [class*="av-column-"]:first-child {
+        order: 0;
+    }
+    .avail-theme .theme-slider [class*="av-column-"]:nth-child(2) {
+        margin-top: 2rem;
+    }
+}
+
+.navbar-area.sticky-nav.sticky-menu .menubar .menu-wrap > li > a, .navbar-area.sticky-nav.sticky-menu .header-search-toggle, .navbar-area.sticky-nav.sticky-menu .header-search-toggle .cart-icon-wrap {
+    color: #fff !important;
+}
+
+.sticky-menu {
+    background: #151535;
+}
+
+.avail-theme .theme-mobile-nav.sticky-menu .hamburger-menu div {
+    background-color: #FFFFFF;
+}
+
+.avail-theme .theme-mobile-nav.sticky-menu .header-search-toggle{
+    color: #FFFFFF;
+}
+
+.avail-theme .breadcrumb-content {
+    min-height: 135px;
+}
